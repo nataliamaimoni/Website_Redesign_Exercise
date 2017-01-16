@@ -1,0 +1,395 @@
+
+@font-face {
+    font-family: 'cartoon_slamregular';
+    src: url('font/cartoon/cartoon_slam-webfont.woff2') format('woff2'),
+         url('font/cartoon/cartoon_slam-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'whitney-medium';
+    src: url('font/whitney/whitney-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/************* HEADER *************/
+header{
+  background-color: #000;
+}
+
+/** TOP SECTION **/
+
+.header-top {
+  width: 70%;
+  height: 70px;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.header-inf {
+  height: 50px;
+  width: 20%;
+  padding: 1%;
+  float: left;
+  text-align: right;
+  color: #FFF;
+  transition: .3s ease-out;
+}
+
+.header-inf a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+.header-inf h2 {
+  font-family: 'cartoon_slamregular';
+  font-size: 1.5em;
+  margin: 2px;
+}
+
+.header-inf h3 {
+  font-family: 'cartoon_slamregular';
+  font-size: .6em;
+  background: url(../img/plus.png) no-repeat bottom right;
+  padding: 3px 25px;
+  height: 15px;
+}
+
+.header-banner {
+  float: right;
+  max-width: 70%;
+}
+
+/** END OF TOP SECTION **/
+
+/** BOTTOM SECTION **/
+
+.header-bottom{
+  background-color: #4c4c4c;
+  height: 40px;
+}
+
+nav.header-menu{
+  width: 70%;
+  margin: 0 auto;
+  clear: both;
+  position: relative;
+}
+
+input[type="search"] {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  background-color: #000;
+  color: #8f939b;
+  text-align: center;
+  font-weight: bold;
+  border: 0;
+}
+/** END OF BOTTOM SECTION **/
+/************* END OF HEADER *************/
+
+/************* BODY *************/
+
+.container {
+  width: 70%;
+  margin: 2% auto;
+}
+
+.weekday {
+  background-color: #009ade;
+  border-top: 4px solid #ffea00;
+  text-transform: uppercase;
+  padding: 1%;
+  color: #FFF;
+  font-family: 'cartoon_slamregular';
+  font-size: 1.5em;
+
+}
+
+/** LEFT SECTION **/
+
+section.hours{
+  display: block;
+  width: 50%;
+  margin: 2%;
+  float: left;
+}
+
+.hour-list li{
+  display: inline-table;
+  width: 60px;
+  height: 65px;
+  text-align: center;
+  box-sizing: content-box;
+  margin: 2px;
+}
+
+.hour-list a{
+  text-decoration: none;
+  padding: auto;
+  color: #FFF;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'cartoon_slamregular';
+  font-size: .9em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.hour-list li:nth-child(3n+0) {
+  background-color: #ffea00;
+  filter: opacity(0.6);
+}
+
+.hour-list li:nth-child(3n+1) {
+  background-color: #009ade;
+  filter: opacity(0.6);
+}
+
+.hour-list li:nth-child(3n+2) {
+  background-color: #ec0080;
+  filter: opacity(0.6);
+}
+
+.hour-list li:last-child {
+  background: url(../img/arrow.png) no-repeat center;
+}
+
+.hour-list li:last-child a{
+  visibility: hidden;
+  font-size: .1em;
+}
+
+/** END OF LEFT SECTION **/
+/** RIGHT SECTION **/
+
+section.hour-detail {
+  background-color: #ffea00;
+  width: 40%;
+  margin: 2%;
+  float: right;
+  padding: 1%;
+}
+
+.hour-detail h2 {
+  text-align: center;
+  color: #FFF;
+  padding: 2%;
+  font-family: 'cartoon_slamregular';
+  font-size: 2.5em;
+  margin-bottom: 2%;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hour-detail-list {
+  list-style: none;
+}
+
+li.cartoon-detail {
+  position: relative;
+  background-color: #FFF;
+  height: 70px;
+  padding: 1%;
+  margin-bottom: 2%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  transition: .3s ease-out;
+
+}
+
+.vert-text {
+  display: inline-block;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  font-family: 'cartoon_slamregular';
+  font-size: .9em;
+  color: #4c4c4c;
+}
+
+img[src="img/show1.png"], img[src="img/show2.png"] {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  left: 80px;
+  bottom: 8px;
+}
+
+span.show-name{
+  position: absolute;
+  display: inline-block;
+  width: 30%;
+  left: 170px;
+  bottom: 20px;
+  font-family: 'whitney-medium';
+  font-size: .9em;
+  font-weight: 500;
+}
+/** END OF RIGHT SECTION **/
+
+/** CAROUSEL SECTION **/
+div.carousel {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ec0080+78,009ade+78,009ade+78,009ade+95,ffea00+95 */
+  background: rgb(236,0,128); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(236,0,128,1) 78%, rgba(0,154,222,1) 78%, rgba(0,154,222,1) 78%, rgba(0,154,222,1) 95%, rgba(255,234,0,1) 95%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(236,0,128,1) 78%,rgba(0,154,222,1) 78%,rgba(0,154,222,1) 78%,rgba(0,154,222,1) 95%,rgba(255,234,0,1) 95%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(236,0,128,1) 78%,rgba(0,154,222,1) 78%,rgba(0,154,222,1) 78%,rgba(0,154,222,1) 95%,rgba(255,234,0,1) 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec0080', endColorstr='#ffea00',GradientType=0 ); /* IE6-9 */
+
+  height: 110px;
+  clear: both;
+}
+
+.characters {
+  width: 600px;
+  margin: 0 auto;
+}
+
+img[src="img/arrow3.png"],
+img[src="img/arrow2.png"] {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 2%;
+}
+
+.characters img {
+  transition: .3s ease-out;
+}
+
+/** END OF CAROUSEL SECTION **/
+
+/** FOOTER SECTION **/
+
+footer{
+  background-color: #4c4c4c;
+}
+
+.footer-top{
+  margin: 0 auto;
+  height: 70px;
+  width: 70%;
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+.footer-top img {
+  float: left;
+}
+
+.footer-top p {
+  display: inline-block;
+  width: 80%;
+  color: #FFF;
+  margin: 1%;
+  text-align: center;
+  float: right;
+  font-family: 'whitney-medium';
+  font-size: .9em;
+  line-height: 1.3em;
+}
+
+nav.footer-menu{
+  background-color: #1f2021;
+  height: 60px;
+  margin-bottom: 1%;
+}
+
+.footer-menu ul {
+  width: 50%;
+  margin: 2px auto;
+  text-align: center;
+}
+
+.footer-menu ul li{
+  display: inline-table;
+  padding: 5px;
+}
+
+.footer-menu ul a{
+  text-decoration: none;
+  color: #FFF;
+  text-transform: uppercase;
+  margin: 2px;
+  font-size: .5em;
+  font-family: 'cartoon_slamregular';
+  font-size: .7em;
+}
+/** END OF FOOTER SECTION **/
+
+/************* END OF BODY *************/
+
+/************* TRANSITIONS *************/
+
+/** MAIN BODY **/
+
+.header-inf:hover {
+  transform: scale(1.1);
+  transition: .3s ease-in;
+}
+
+li.cartoon-detail:hover {
+  transform: scale(1.1);
+  border: 1px solid #4c4c4c;
+  background-color: #ffea00;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in;
+}
+
+.hour-list li:nth-child(3n+0):hover {
+  background-color: #ffea00;
+  filter: opacity(1);
+  transform: scale(1.1);
+  transition: all 0.5s ease-in;
+}
+
+.hour-list li:nth-child(3n+1):hover {
+  background-color: #009ade;
+  filter: opacity(1);
+  transform: scale(1.1);
+  transition: all 0.5s ease-in;
+}
+
+.hour-list li:nth-child(3n+2):hover {
+  background-color: #ec0080;
+  filter: opacity(1);
+  transform: scale(1.1);
+  transition: all 0.5s ease-in;
+}
+
+.hour-list li:last-child:hover {
+  background-color: #FFF;
+  filter: opacity(1);
+  transform: scale(1.2);
+  transition: all 0.5s ease-in;
+}
+
+.characters img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2) contrast(1.1);
+  transition: .3s ease-in;
+}
+
+.characters img[src="img/arrow3.png"]:hover,
+.characters img[src="img/arrow2.png"]:hover {
+  transform: rotate(360deg);
+  transition: .4s ease-in;
+}
+
+.footer-menu li:hover {
+  transform: scale(1.1);
+  transition: .3s ease-in;
+}
+
+.footer-menu a:hover {
+  color: #ffea00;
+  transition: .3s ease-in;
+}
+
+.footer-menu a:active {
+  color: #ec0080;
+  transition: .3s ease-in;
+}

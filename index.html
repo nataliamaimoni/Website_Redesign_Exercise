@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Programação Cartoon Network</title>
+  </head>
+  <body>
+
+    <header> <!-- HEADER START -->
+        <div class="header-top">
+            <section class="header-inf">
+              <a href="#">
+              <h2> 14:00 </h2>
+              <h3> O incrível mundo de Gumball </h3>
+              </a>
+            </section>
+            <a href="#"><img src="img/banner.jpg" alt="Banner de propaganda" class="header-banner"></a>
+        </div>
+        <div class="header-bottom">
+           <nav class="header-menu">
+              <h1><a href="index.html"> <img src="img/logo.png" alt="Logo Cartoon Network"></a></h1>
+              <input type="search" name="search" value="Pesquisar...">
+           </nav>
+        </div>
+    </header> <!-- HEADER END -->
+
+    <div class="container"> <!-- MAIN BODY START -->
+
+      <div class="weekday">
+        <h2>Segunda 18</h2>
+      </div>
+
+      <section class="hours"> <!-- HOURLY MENU -->
+        <ol class="hour-list">
+          <li><a href="#">00h</a></li>
+          <li><a href="#">01h</a></li>
+          <li><a href="#">02h</a></li>
+          <li><a href="#">03h</a></li>
+          <li><a href="#">04h</a></li>
+          <li><a href="#">05h</a></li>
+          <li><a href="#">06h</a></li>
+          <li><a href="#">07h</a></li>
+          <li><a href="#">08h</a></li>
+          <li><a href="#">09h</a></li>
+          <li><a href="#">10h</a></li>
+          <li><a href="#">11h</a></li>
+          <li><a href="#">12h</a></li>
+          <li><a href="#">13h</a></li>
+          <li><a href="#">14h</a></li>
+          <li><a href="#">15h</a></li>
+          <li><a href="#">16h</a></li>
+          <li><a href="#">17h</a></li>
+          <li><a href="#">18h</a></li>
+          <li><a href="#">19h</a></li>
+          <li><a href="#">20h</a></li>
+          <li><a href="#">21h</a></li>
+          <li><a href="#">22h</a></li>
+          <li><a href="#">23h</a></li>
+          <li><a href="#">Amanhã</a></li>
+        </ol>
+      </section> <!-- END OF HOURLY MENU -->
+
+      <section class="hour-detail"> <!-- HOURLY PROGRAMMING -->
+        <h2 id="new-hour"> 23h </h2>
+
+        <ol class="hour-detail-list">
+          <li class="cartoon-detail">
+              <p>
+               <span class="vert-text"> 23:00 </span>
+               <img src="img/show1.png" alt="Apenas um show">
+               <span class="show-name"> Apenas um show </span>
+             </p>
+          </li>
+          <li class="cartoon-detail">
+              <p>
+               <span class="vert-text"> 23:15 </span>
+               <img src="img/show1.png" alt="Apenas um show">
+               <span class="show-name"> Apenas um show </span>
+             </p>
+          </li>
+          <li class="cartoon-detail">
+              <p>
+               <span class="vert-text"> 23:30 </span>
+               <img src="img/show2.png" alt="Clarêncio, O Otimista">
+               <span class="show-name"> Clarêncio, O Otimista </span>
+             </p>
+          </li>
+          <li class="cartoon-detail">
+              <p>
+               <span class="vert-text"> 23:45 </span>
+               <img src="img/show2.png" alt="Clarêncio, O Otimista">
+               <span class="show-name"> Clarêncio, O Otimista </span>
+             </p>
+          </li>
+        </ol>
+
+      </section> <!-- END OF HOURLY PROGRAMMING -->
+
+      <div class="carousel"> <!-- BOTTOM CAROUSEL -->
+        <section class="characters">
+            <a href="#"><img src="img/arrow3.png" alt="Mais personagens"></a>
+            <a href="#"><img src="img/character1.png" alt="Mais informações sobre o desenho X"></a>
+            <a href="#"><img src="img/character2.png" alt="Mais informações sobre o desenho X"></a>
+            <a href="#"><img src="img/character3.png" alt="Mais informações sobre o desenho X"></a>
+            <a href="#"><img src="img/character4.png" alt="Mais informações sobre o desenho X"></a>
+            <a href="#"><img src="img/character5.png" alt="Mais informações sobre o desenho X "></a>
+            <a href="#"><img src="img/arrow2.png" alt="Mais personagens"></a>
+        </section>
+      </div> <!-- END OF BOTTOM CAROUSEL -->
+
+    </div> <!-- MAIN BODY END -->
+
+    <footer> <!-- FOOTER START -->
+      <div class="footer-top">
+        <a href="index.html"><img src="img/logo.png" alt="Logo Cartoon Network"></a>
+        <p> Jogos e vídeos grátis de Ben10, Hora da Aventura com Finn e Jake, Apenas
+        um show, A Turma da Monica, O Incrível Mundo de Gumball, Steven Universo,
+      e muito mais.  </p>
+      </div>
+      <nav class="footer-menu">
+        <ul>
+          <li><a href="#">Guia para pais</a></li>
+          <li><a href="#">Dicas de segurança</a></li>
+          <li><a href="#">Programação</a></li>
+          <li><a href="#">Programação efetivamente veiculada</a></li>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </footer> <!-- FOOTER END -->
+
+    <script type="text/javascript">
+      var changeHour = document.getElementById("new-hour");
+      var getHour = document.querySelector(".hour-list li a");
+
+      getHour.onclick = function () {
+        changeHour.textContent = getHour.textContent;
+        getHour.style.backgroundColor= "black";
+     }
+    </script>
+
+  </body>
+</html>
